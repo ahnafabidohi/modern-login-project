@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 400px;
+            text-align: left;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-container button {
+            background: #6a11cb;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="class">Class:</label>
+            <select id="class" required>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+            </select>
+
+            <label for="trade">Trade:</label>
+            <select id="trade" required>
+                <option value="it_support">IT Support</option>
+                <option value="iot_basics">IoT Basics</option>
+                <option value="civil_electrical">Civil Electrical</option>
+                <option value="rac">RAC</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <button type="submit">Submit Information</button>
+        </form>
+    </div>
+</body>
+</html>
